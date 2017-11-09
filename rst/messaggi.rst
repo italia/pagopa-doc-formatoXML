@@ -2,9 +2,9 @@
 .. figure:: media/image1.png
    :width: 100%
 
-+------------------------------------------------+
-| ***Versione*** ***2.0 -*** ***luglio 2017***   |
-+------------------------------------------------+
++-------------------------------+
+| **Versione2.0 - luglio 2017** |
++-------------------------------+
 
 
 Messaggi e flussi informativi
@@ -28,12 +28,12 @@ sono individuate come:
 
 Nel presente capitolo sono inoltre riportate le informazioni relative a
 "Tabella delle Controparti", "Catalogo Dati Informativi" (§
-5.3.7) e flussi inerenti i “Totali di Traffico” (§ 4.5.1).
+5.3.7) e flussi inerenti i "Totali di Traffico" (§ 4.5.1).
 
 Formato dei messaggi
 ---------------------
 
-    I formati adottati devono possedere almeno i seguenti requisiti:
+   I formati adottati devono possedere almeno i seguenti requisiti:
 
 -  consentire, nei diversi ambiti di applicazione e per le diverse
    tipologie di trattazione, l'archiviazione, la leggibilità,
@@ -53,14 +53,14 @@ Al fine di garantire il rispetto del requisito di interoperabilità, si
 prevede una rappresentazione in formato XML.
 
 Dovranno essere definite strutture che ne consentano la validazione sia
-presso l’Ente Creditore che presso il Prestatori di servizi di
-pagamento\ *,* relativamente alle fasi di generazione e di verifica
+presso l'Ente Creditore che presso i Prestatori di servizi di
+pagamento, relativamente alle fasi di generazione e di verifica
 formale dei messaggi.
 
 Le strutture rappresentano lo standard minimo a cui gli Enti Creditori e
 i Prestatori di servizi di pagamento devono attenersi; il rigoroso
 rispetto dello standard minimo è indispensabile per garantire
-l’interoperabilità.
+l'interoperabilità.
 
 Per la visualizzazione dei messaggi, devono essere adottate soluzioni
 che presentino le informazioni in modo fedele alla struttura.
@@ -72,36 +72,30 @@ Sono di seguito elencati i soggetti coinvolti nel processo di pagamento:
 
 a. *Soggetto Pagatore:* rappresenta il soggetto (Persona Fisica o Giuridica) debitore di somme di denaro nei confronti della Pubblica Amministrazione. L’Ente Creditore è responsabile della corretta identificazione del Soggetto Pagatore;
 
-b. *Soggetto Versante*: rappresenta il soggetto delegato che effettua per conto del soggetto pagatore il versamento delle somme dovute. Il Soggetto Versante è identificato dalla componente WISP del Nodo (per i pagamenti disposti presso l’EC) o dal PSP, se necessario, negli altri casi;
+b. *Soggetto Versante:* rappresenta il soggetto delegato che effettua per conto del soggetto pagatore il versamento delle somme dovute. Il Soggetto Versante è identificato dalla componente WISP del Nodo (per i pagamenti disposti presso l’EC) o dal PSP, se necessario, negli altri casi;
 
-c. *Ente Beneficiario*: rappresenta la Pubblica Amministrazione creditrice, a qualsiasi titolo, di somme dovute dal *Soggetto Pagatore*\ **;**
+c. *Ente Beneficiario:* rappresenta la Pubblica Amministrazione creditrice, a qualsiasi titolo, di somme dovute dal *Soggetto Pagatore*\ **;**
 
 d. *Istituto Attestante:* rappresenta il Prestatore di Servizi di Pagamento che effettua il pagamento richiesto e ne attesta la regolarità.
 
 Formato dei dati
 ----------------
 
-Le colonne *Liv,* G\ *enere,* *Occ*, *Len* e *UNIFI* assumono i seguenti significati:
+Le colonne *Liv*, *Genere*, *Occ*, *Len* e *UNIFI* assumono i seguenti significati:
 
-+----------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
-| **colonna **   | *Liv*      | indica il livello di indentazione del dato al fine di rendere evidenti le strutture che contengono ulteriori informazioni (colonna Genere uguale ad s): esempio, le strutture di livello 1 sono formate da tutti i dati di livello superiore ad 1, quelle di livello 2 sono formate da tutti i dati di livello superiore a 2, e così via.   | ......... ... ... ......... ..... ......... . .....   |
-+================+============+=============================================================================================================================================================================================================================================================================================================================================+=======================================================+
-| **colonna **   | *Genere*   | che può assumere i seguenti valori                                                                                                                                                                                                                                                                                                          | ......... ... ... ......... ..... ......... . .....   |
-+----------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
-|                |            | s                                                                                                                                                                                                                                                                                                                                           | struttura che può contenere altre strutture o dati,   |
-+----------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
-|                |            | an                                                                                                                                                                                                                                                                                                                                          | dato alfanumerico,                                    |
-+----------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
-|                |            | n                                                                                                                                                                                                                                                                                                                                           | dato numerico.                                        |
-+----------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
-| **colonna **   | *Occ*      | indica le “occorrenze” del dato nel formato ***min..max***.                                                                                                                                                                                                                                                                                 | ......... ... ... ......... ..... ......... . .....   |
-+----------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
-|                |            | L’eventuale obbligatorietà di tali informazioni è legata alla natura dell’ente, alle specifiche esigenze e caratteristiche dell’operazione ovvero ad accordi tra utilizzatore e prestatore di servizi di pagamento.                                                                                                                         | ......... ... ... ......... ..... ......... . .....   |
-+----------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
-| **colonna **   | *Len *     | indica la lunghezza massima del dato nel formato *min..max*; nel caso si tratti di una lunghezza fissa comparirà solo il dato *len*, nel caso di lunghezze fisse in alternativa la notazione sarà *len1* \| *len2*.                                                                                                                         | ......... ... ... ......... ..... ......... . .....   |
-+----------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
-| **colonna **   | *UNIFI*    | indica la corrispondenza del Dato con gli schemi ISO 20022 - UNIversal Financial Industry message (UNIFI).                                                                                                                                                                                                                                  | ......... ... ... ......... ..... ......... . .....   |
-+----------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
+| *Liv*      | Indica il livello di indentazione del dato al fine di rendere evidenti le strutture che contengono ulteriori informazioni (colonna Genere uguale ad s): esempio, le strutture di livello 1 sono formate da tutti i dati di livello superiore ad 1, quelle di livello 2 sono formate da tutti i dati di livello superiore a 2, e così via.   | ......... ... ... ......... ..... ......... . .....   |
++============+=============================================================================================================================================================================================================================================================================================================================================+=======================================================+
+| *Genere*   | che può assumere i seguenti valori: s, an, n.                                                                                                                                                                                                                                                                                                     | ......... ... ... ......... ..... ......... . .....   |
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
+| *Occ*      | indica le “occorrenze” del dato nel formato *min..max*.                                                                                                                                                                                                                                                                                   | ......... ... ... ......... ..... ......... . .....   |
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
+|            | L’eventuale obbligatorietà di tali informazioni è legata alla natura dell’ente, alle specifiche esigenze e caratteristiche dell’operazione ovvero ad accordi tra utilizzatore e prestatore di servizi di pagamento.                                                                                                                         | ......... ... ... ......... ..... ......... . .....   |
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
+| *Len*      | indica la lunghezza massima del dato nel formato *min..max*; nel caso si tratti di una lunghezza fissa comparirà solo il dato *len*, nel caso di lunghezze fisse in alternativa la notazione sarà *len1* \| *len2*.                                                                                                                         | ......... ... ... ......... ..... ......... . .....   |
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
+| *UNIFI*    | indica la corrispondenza del Dato con gli schemi ISO 20022 - UNIversal Financial Industry message (UNIFI).                                                                                                                                                                                                                                  | ......... ... ... ......... ..... ......... . .....   |
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+
 
 Richiesta Pagamento Telematico (RPT)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -127,13 +121,10 @@ a favore dello stesso Ente Creditore.
 |                                         |           |              |           |           |                                          | Il Nodo dei Pagamenti-SPC non effettua verifiche di congruenza su tale dato.                                                                                                                                                        |
 +-----------------------------------------+-----------+--------------+-----------+-----------+------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |     identificativoMessaggioRichiesta    | 1         | an           | 1..1      | 1..35     | Message Identification                   | Identificativo legato alla trasmissione della richiesta di pagamento.                                                                                                                                                               |
-|                                         |           |              |           |           |                                          |                                                                                                                                                                                                                                     |
 |                                         |           |              |           |           |                                          | Deve essere univoco nell’ambito della stessa data riferita all’elemento                                                                                                                                                             |
-|                                         |           |              |           |           |                                          |                                                                                                                                                                                                                                     |
-|                                         |           |              |           |           |                                          | dataOraMessaggioRichiesta.                                                                                                                                                                                                          |
++|                                         |           |              |           |           |                                          | dataOraMessaggioRichiesta.                                                                                                                                                                                                          |
 +-----------------------------------------+-----------+--------------+-----------+-----------+------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |     dataOraMessaggioRichiesta           | 1         | an           | 1..1      | 19        | Creation Date Time                       | Indica la data e l’ora di generazione del messaggio di richiesta di pagamento secondo il formato ISO 8601                                                                                                                           |
-|                                         |           |              |           |           |                                          |                                                                                                                                                                                                                                     |
 |                                         |           |              |           |           |                                          | **[YYYY]-[MM]-[DD]T[hh]:[mm]:[ss]**                                                                                                                                                                                                 |
 +-----------------------------------------+-----------+--------------+-----------+-----------+------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |     autenticazioneSoggetto              | 1         | an           | 1..1      | 4         | Proprietary Code                         | Contiene la modalità di identificazione applicata al soggetto che deve essere addebitato per il pagamento                                                                                                                           |
