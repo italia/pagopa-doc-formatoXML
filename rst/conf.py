@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # -- PROJECT Variables ----------------------------------------------------
-settings_project_name = u"Formato Messaggi XML PagoPA (BOZZA)"
+settings_project_name = u"Formato Messaggi XML PagoPA"
 settings_copyright_year = '2017'
 settings_copyright_name = ''
 settings_doc_version = 'version: latest'
