@@ -85,7 +85,7 @@ richiesta, nei formati che saranno concordati.
 |                                                |           |              |           |           | **Obbligatorio nel caso di richieste SOAP.**                                                                                                                                                                                                                                  |
 +------------------------------------------------+-----------+--------------+-----------+-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Si precisa per i PSP che *deve essere sempre registrato*, all'interno del Giornale degli Eventi, l'evento relativo alla *generazione della RPT* (avente sia positivo, sia esito negativo): in questo caso valorizzare il dato:
+Si precisa per i PSP che *deve essere sempre registrato*, all'interno del Giornale degli Eventi, l'evento relativo alla *generazione della RT* (avente sia positivo, sia esito negativo): in questo caso valorizzare il dato:
 
 -  categoriaEvento a "INTERNO";
 
