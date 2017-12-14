@@ -1637,8 +1637,7 @@ Creditore o dal Nodo dei Pagamenti-SPC, per segnalare alla controparte
 la presa in carico di un file relativo allo scambio di avvisi digitali o
 del loro esito.
 
-\ **Tabella 23 - Tracciato XML per la segnalazione di "\ *Presa in
-carico*\ " (File di ACK)**
+\ **Tabella 23 - Tracciato XML per la segnalazione di "Presa incarico" (File di ACK)**
 
 +-------------------------------------+-----------+--------------+-----------+-----------+----------------------------------------------------------------------------------------------------------------------------------+
 | **Dato**                            | **Liv**   | **Genere**   | **Occ**   | **Len**   | **Contenuto**                                                                                                                    |
